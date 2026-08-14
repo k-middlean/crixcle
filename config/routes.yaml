@@ -9,3 +9,23 @@
 
 controllers:
     resource: routing.controllers
+
+base_path:
+    path: /
+    controller: App\Controller\BrandingController::index
+    methods: [GET]
+
+portfolio:
+    path: /portfolio
+    controller: App\Controller\BrandingController::portfolio
+    methods: [GET]
+
+services:
+    path: /services
+    controller: App\Controller\BrandingController::services
+    methods: [GET]
+
+contact-us:
+    path: /contact-us
+    controller: App\Controller\BrandingController::contactUs
+    methods: [GET]
